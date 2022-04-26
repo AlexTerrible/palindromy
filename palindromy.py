@@ -1,15 +1,10 @@
-def czy_to_palindrom(x):
-    y = len(x)
+def is_this_palindrome(word):
+    y = len(word)
     z = 0
-    for i in range (0,y):
-        tyl = (x[-1-i])
-        przod = (x[i])
-        if tyl == przod:
-            z= z + 1
-    if z == y:
-        print("palindrom")
+    backward = (word[::-1])
+    if backward == word:
+        print("This is palindrome!")
     else:
-        print ("nie palindrom")
+        print ("This is not palindrome!")
 
-czy_to_palindrom("test")
-    
+is_this_palindrome("kajak")
